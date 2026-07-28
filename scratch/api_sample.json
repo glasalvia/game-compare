@@ -1,0 +1,547 @@
+{
+  "games": [
+    {
+      "cheapest": "xbox",
+      "diff_pct": 99.7,
+      "match_id": 9144,
+      "match_score": 1.0,
+      "steam": {
+        "discount_pct": null,
+        "id": 10618,
+        "is_free": false,
+        "original_price_usd": 7.99,
+        "price_usd": 7.99,
+        "steam_app_id": "1969080",
+        "title": "A Building Full of Cats",
+        "url": "https://store.steampowered.com/app/1969080/A_Building_Full_of_Cats/?snr=1_7_7_230_150_3"
+      },
+      "xbox": {
+        "discount_pct": null,
+        "is_free": false,
+        "is_game_pass": false,
+        "original_price_ars": 43.0,
+        "price_ars": 43.0,
+        "price_usd_equiv": 0.03,
+        "store_id": "9NF6VQ5Q4QXR",
+        "title": "A Building Full of Cats",
+        "url": "https://www.xbox.com/es-ar/games/store/-/9NF6VQ5Q4QXR"
+      }
+    },
+    {
+      "cheapest": "xbox",
+      "diff_pct": null,
+      "match_id": 9033,
+      "match_score": 1.0,
+      "steam": {
+        "discount_pct": null,
+        "id": 10507,
+        "is_free": false,
+        "original_price_usd": 0.0,
+        "price_usd": 0.0,
+        "steam_app_id": "2070550",
+        "title": "A Castle Full of Cats",
+        "url": "https://store.steampowered.com/app/2070550/A_Castle_Full_of_Cats/?snr=1_7_7_230_150_1"
+      },
+      "xbox": {
+        "discount_pct": null,
+        "is_free": false,
+        "is_game_pass": false,
+        "original_price_ars": 58.0,
+        "price_ars": 58.0,
+        "price_usd_equiv": 0.04,
+        "store_id": "9NVPSTC08PFQ",
+        "title": "A Castle Full of Cats",
+        "url": "https://www.xbox.com/es-ar/games/store/-/9NVPSTC08PFQ"
+      }
+    },
+    {
+      "cheapest": "xbox",
+      "diff_pct": 98.7,
+      "match_id": 9311,
+      "match_score": 1.0,
+      "steam": {
+        "discount_pct": 0,
+        "id": 10785,
+        "is_free": false,
+        "original_price_usd": 14.99,
+        "price_usd": 14.99,
+        "steam_app_id": "253230",
+        "title": "Volcano Princess",
+        "url": "https://store.steampowered.com/app/253230/A_Hat_in_Time/?snr=1_7_7_230_150_6"
+      },
+      "xbox": {
+        "discount_pct": null,
+        "is_free": false,
+        "is_game_pass": false,
+        "original_price_ars": 299.0,
+        "price_ars": 299.0,
+        "price_usd_equiv": 0.19,
+        "store_id": "BX91DHSR4C5T",
+        "title": "A Hat in Time",
+        "url": "https://www.xbox.com/es-ar/games/store/-/BX91DHSR4C5T"
+      }
+    },
+    {
+      "cheapest": "xbox",
+      "diff_pct": 100.0,
+      "match_id": 9018,
+      "match_score": 1.0,
+      "steam": {
+        "discount_pct": 75,
+        "id": 10492,
+        "is_free": true,
+        "original_price_usd": 2.99,
+        "price_usd": 0.0,
+        "steam_app_id": "1055540",
+        "title": "A Short Hike",
+        "url": "https://store.steampowered.com/app/1055540/A_Short_Hike/?snr=1_7_7_230_150_1"
+      },
+      "xbox": {
+        "discount_pct": null,
+        "is_free": false,
+        "is_game_pass": false,
+        "original_price_ars": 115.0,
+        "price_ars": 115.0,
+        "price_usd_equiv": 0.07,
+        "store_id": "9NK78DF207SD",
+        "title": "A Short Hike",
+        "url": "https://www.xbox.com/es-ar/games/store/-/9NK78DF207SD"
+      }
+    },
+    {
+      "cheapest": "xbox",
+      "diff_pct": 79.6,
+      "match_id": 9405,
+      "match_score": 1.0,
+      "steam": {
+        "discount_pct": null,
+        "id": 10879,
+        "is_free": false,
+        "original_price_usd": 10.49,
+        "price_usd": 10.49,
+        "steam_app_id": "1201270",
+        "title": "A Space for the Unbound",
+        "url": "https://store.steampowered.com/app/1201270/A_Space_for_the_Unbound/?snr=1_7_7_230_150_8"
+      },
+      "xbox": {
+        "discount_pct": null,
+        "is_free": false,
+        "is_game_pass": false,
+        "original_price_ars": 3299.0,
+        "price_ars": 3299.0,
+        "price_usd_equiv": 2.14,
+        "store_id": "9PG2RZ8GVZCJ",
+        "title": "A Space for the Unbound",
+        "url": "https://www.xbox.com/es-ar/games/store/-/9PG2RZ8GVZCJ"
+      }
+    },
+    {
+      "cheapest": "xbox",
+      "diff_pct": 98.5,
+      "match_id": 9225,
+      "match_score": 1.0,
+      "steam": {
+        "discount_pct": 0,
+        "id": 10699,
+        "is_free": false,
+        "original_price_usd": 2.99,
+        "price_usd": 2.99,
+        "steam_app_id": "1688580",
+        "title": "A YEAR OF SPRINGS",
+        "url": "https://store.steampowered.com/app/1688580/A_YEAR_OF_SPRINGS/?snr=1_7_7_230_150_5"
+      },
+      "xbox": {
+        "discount_pct": null,
+        "is_free": false,
+        "is_game_pass": false,
+        "original_price_ars": 70.0,
+        "price_ars": 70.0,
+        "price_usd_equiv": 0.05,
+        "store_id": "9MVSDLX60BND",
+        "title": "A YEAR OF SPRINGS",
+        "url": "https://www.xbox.com/es-ar/games/store/-/9MVSDLX60BND"
+      }
+    },
+    {
+      "cheapest": "xbox",
+      "diff_pct": 98.2,
+      "match_id": 9505,
+      "match_score": 1.0,
+      "steam": {
+        "discount_pct": 0,
+        "id": 10979,
+        "is_free": false,
+        "original_price_usd": 10.49,
+        "price_usd": 10.49,
+        "steam_app_id": "986800",
+        "title": "AVICII Invector",
+        "url": "https://store.steampowered.com/app/986800/AVICII_Invector/?snr=1_7_7_230_150_10"
+      },
+      "xbox": {
+        "discount_pct": null,
+        "is_free": false,
+        "is_game_pass": false,
+        "original_price_ars": 284.0,
+        "price_ars": 284.0,
+        "price_usd_equiv": 0.18,
+        "store_id": "9P0BD1B6351B",
+        "title": "AVICII Invector",
+        "url": "https://www.xbox.com/es-ar/games/store/-/9P0BD1B6351B"
+      }
+    },
+    {
+      "cheapest": "xbox",
+      "diff_pct": 74.1,
+      "match_id": 9587,
+      "match_score": 1.0,
+      "steam": {
+        "discount_pct": 0,
+        "id": 11061,
+        "is_free": false,
+        "original_price_usd": 9.99,
+        "price_usd": 9.99,
+        "steam_app_id": "949480",
+        "title": "BROK the InvestiGator",
+        "url": "https://store.steampowered.com/app/949480/BROK_the_InvestiGator/?snr=1_7_7_230_150_12"
+      },
+      "xbox": {
+        "discount_pct": null,
+        "is_free": false,
+        "is_game_pass": false,
+        "original_price_ars": 3999.0,
+        "price_ars": 3999.0,
+        "price_usd_equiv": 2.59,
+        "store_id": "9P7G0WL4Z7RF",
+        "title": "BROK the InvestiGator",
+        "url": "https://www.xbox.com/es-ar/games/store/-/9P7G0WL4Z7RF"
+      }
+    },
+    {
+      "cheapest": "steam",
+      "diff_pct": -73.0,
+      "match_id": 9288,
+      "match_score": 1.0,
+      "steam": {
+        "discount_pct": null,
+        "id": 10762,
+        "is_free": false,
+        "original_price_usd": 4.49,
+        "price_usd": 4.49,
+        "steam_app_id": "2379780",
+        "title": "Balatro",
+        "url": "https://store.steampowered.com/app/2379780/Balatro/?snr=1_7_7_230_150_6"
+      },
+      "xbox": {
+        "discount_pct": null,
+        "is_free": false,
+        "is_game_pass": false,
+        "original_price_ars": 11999.0,
+        "price_ars": 11999.0,
+        "price_usd_equiv": 7.77,
+        "store_id": "9PK087LNGJC5",
+        "title": "Balatro",
+        "url": "https://www.xbox.com/es-ar/games/store/-/9PK087LNGJC5"
+      }
+    },
+    {
+      "cheapest": "xbox",
+      "diff_pct": 42.1,
+      "match_id": 9665,
+      "match_score": 1.0,
+      "steam": {
+        "discount_pct": 75,
+        "id": 11140,
+        "is_free": false,
+        "original_price_usd": 5.79,
+        "price_usd": 37.99,
+        "steam_app_id": "1086940",
+        "title": "The Witcher 3: Wild Hunt",
+        "url": "https://store.steampowered.com/app/1086940/Baldurs_Gate_3/?snr=1_7_7_230_150_14"
+      },
+      "xbox": {
+        "discount_pct": null,
+        "is_free": false,
+        "is_game_pass": false,
+        "original_price_ars": 34000.0,
+        "price_ars": 34000.0,
+        "price_usd_equiv": 22.01,
+        "store_id": "9ND58LQTG09T",
+        "title": "Baldur's Gate 3",
+        "url": "https://www.xbox.com/es-ar/games/store/-/9ND58LQTG09T"
+      }
+    },
+    {
+      "cheapest": "xbox",
+      "diff_pct": 99.9,
+      "match_id": 9308,
+      "match_score": 1.0,
+      "steam": {
+        "discount_pct": null,
+        "id": 10782,
+        "is_free": false,
+        "original_price_usd": 10.09,
+        "price_usd": 10.09,
+        "steam_app_id": "238460",
+        "title": "WEBFISHING",
+        "url": "https://store.steampowered.com/app/238460/BattleBlock_Theater/?snr=1_7_7_230_150_6"
+      },
+      "xbox": {
+        "discount_pct": 75,
+        "is_free": false,
+        "is_game_pass": false,
+        "original_price_ars": 82.5,
+        "price_ars": 20.62,
+        "price_usd_equiv": 0.01,
+        "store_id": "BQ30J3N2LPZX",
+        "title": "BattleBlock Theater",
+        "url": "https://www.xbox.com/es-ar/games/store/-/BQ30J3N2LPZX"
+      }
+    },
+    {
+      "cheapest": "xbox",
+      "diff_pct": 32.1,
+      "match_id": 9473,
+      "match_score": 1.0,
+      "steam": {
+        "discount_pct": 0,
+        "id": 10947,
+        "is_free": false,
+        "original_price_usd": 10.49,
+        "price_usd": 10.49,
+        "steam_app_id": "1269640",
+        "title": "Beacon Pines",
+        "url": "https://store.steampowered.com/app/1269640/Beacon_Pines/?snr=1_7_7_230_150_10"
+      },
+      "xbox": {
+        "discount_pct": null,
+        "is_free": false,
+        "is_game_pass": false,
+        "original_price_ars": 10999.0,
+        "price_ars": 10999.0,
+        "price_usd_equiv": 7.12,
+        "store_id": "9P4R2M0NRWNK",
+        "title": "Beacon Pines",
+        "url": "https://www.xbox.com/es-ar/games/store/-/9P4R2M0NRWNK"
+      }
+    },
+    {
+      "cheapest": "xbox",
+      "diff_pct": 96.4,
+      "match_id": 9275,
+      "match_score": 1.0,
+      "steam": {
+        "discount_pct": 0,
+        "id": 10749,
+        "is_free": false,
+        "original_price_usd": 7.79,
+        "price_usd": 7.79,
+        "steam_app_id": "960090",
+        "title": "Bloons TD 6",
+        "url": "https://store.steampowered.com/app/960090/Bloons_TD_6/?snr=1_7_7_230_150_6"
+      },
+      "xbox": {
+        "discount_pct": null,
+        "is_free": false,
+        "is_game_pass": false,
+        "original_price_ars": 429.0,
+        "price_ars": 429.0,
+        "price_usd_equiv": 0.28,
+        "store_id": "9PHKZ9XT6F85",
+        "title": "Bloons TD 6",
+        "url": "https://www.xbox.com/es-ar/games/store/-/9PHKZ9XT6F85"
+      }
+    },
+    {
+      "cheapest": "xbox",
+      "diff_pct": null,
+      "match_id": 9105,
+      "match_score": 1.0,
+      "steam": {
+        "discount_pct": null,
+        "id": 10579,
+        "is_free": false,
+        "original_price_usd": 0.0,
+        "price_usd": 0.0,
+        "steam_app_id": "1353230",
+        "title": "Bomb Rush Cyberfunk",
+        "url": "https://store.steampowered.com/app/1353230/Bomb_Rush_Cyberfunk/?snr=1_7_7_230_150_2"
+      },
+      "xbox": {
+        "discount_pct": null,
+        "is_free": false,
+        "is_game_pass": false,
+        "original_price_ars": 574.0,
+        "price_ars": 574.0,
+        "price_usd_equiv": 0.37,
+        "store_id": "9PN0WRT1ZFJ2",
+        "title": "Bomb Rush Cyberfunk",
+        "url": "https://www.xbox.com/es-ar/games/store/-/9PN0WRT1ZFJ2"
+      }
+    },
+    {
+      "cheapest": "xbox",
+      "diff_pct": 98.3,
+      "match_id": 9522,
+      "match_score": 1.0,
+      "steam": {
+        "discount_pct": null,
+        "id": 10996,
+        "is_free": false,
+        "original_price_usd": 7.99,
+        "price_usd": 7.99,
+        "steam_app_id": "965680",
+        "title": "Boomerang Fu",
+        "url": "https://store.steampowered.com/app/965680/Boomerang_Fu/?snr=1_7_7_230_150_11"
+      },
+      "xbox": {
+        "discount_pct": null,
+        "is_free": false,
+        "is_game_pass": false,
+        "original_price_ars": 214.0,
+        "price_ars": 214.0,
+        "price_usd_equiv": 0.14,
+        "store_id": "9PJDVRGGFPPH",
+        "title": "Boomerang Fu",
+        "url": "https://www.xbox.com/es-ar/games/store/-/9PJDVRGGFPPH"
+      }
+    },
+    {
+      "cheapest": "xbox",
+      "diff_pct": 97.8,
+      "match_id": 9426,
+      "match_score": 1.0,
+      "steam": {
+        "discount_pct": 0,
+        "id": 10900,
+        "is_free": false,
+        "original_price_usd": 10.49,
+        "price_usd": 10.49,
+        "steam_app_id": "1082710",
+        "title": "Bug Fables: The Everlasting Sapling",
+        "url": "https://store.steampowered.com/app/1082710/Bug_Fables_The_Everlasting_Sapling/?snr=1_7_7_230_150_9"
+      },
+      "xbox": {
+        "discount_pct": null,
+        "is_free": false,
+        "is_game_pass": false,
+        "original_price_ars": 359.0,
+        "price_ars": 359.0,
+        "price_usd_equiv": 0.23,
+        "store_id": "9PNNV537W2SN",
+        "title": "Bug Fables: El Retoño Eterno",
+        "url": "https://www.xbox.com/es-ar/games/store/-/9PNNV537W2SN"
+      }
+    },
+    {
+      "cheapest": "xbox",
+      "diff_pct": 99.4,
+      "match_id": 9381,
+      "match_score": 1.0,
+      "steam": {
+        "discount_pct": 0,
+        "id": 10854,
+        "is_free": false,
+        "original_price_usd": 12.49,
+        "price_usd": 12.49,
+        "steam_app_id": "674140",
+        "title": "Bugsnax",
+        "url": "https://store.steampowered.com/app/674140/Bugsnax/?snr=1_7_7_230_150_8"
+      },
+      "xbox": {
+        "discount_pct": 67,
+        "is_free": false,
+        "is_game_pass": false,
+        "original_price_ars": 359.0,
+        "price_ars": 118.47,
+        "price_usd_equiv": 0.08,
+        "store_id": "9P0FQ0XCV0LB",
+        "title": "Bugsnax",
+        "url": "https://www.xbox.com/es-ar/games/store/-/9P0FQ0XCV0LB"
+      }
+    },
+    {
+      "cheapest": "xbox",
+      "diff_pct": 100.0,
+      "match_id": 9176,
+      "match_score": 1.0,
+      "steam": {
+        "discount_pct": null,
+        "id": 10650,
+        "is_free": true,
+        "original_price_usd": 0.0,
+        "price_usd": 0.0,
+        "steam_app_id": "2672090",
+        "title": "Cats and Seek: Osaka",
+        "url": "https://store.steampowered.com/app/2672090/Cats_and_Seek_Osaka/?snr=1_7_7_230_150_4"
+      },
+      "xbox": {
+        "discount_pct": 40,
+        "is_free": false,
+        "is_game_pass": false,
+        "original_price_ars": 43.0,
+        "price_ars": 25.8,
+        "price_usd_equiv": 0.02,
+        "store_id": "9NB6MLJB72N6",
+        "title": "Cats and Seek : Osaka",
+        "url": "https://www.xbox.com/es-ar/games/store/-/9NB6MLJB72N6"
+      }
+    },
+    {
+      "cheapest": "steam",
+      "diff_pct": -219.5,
+      "match_id": 9295,
+      "match_score": 1.0,
+      "steam": {
+        "discount_pct": 75,
+        "id": 10769,
+        "is_free": false,
+        "original_price_usd": 9.49,
+        "price_usd": 2.37,
+        "steam_app_id": "504230",
+        "title": "Mount &amp; Blade: Warband",
+        "url": "https://store.steampowered.com/app/504230/Celeste/?snr=1_7_7_230_150_6"
+      },
+      "xbox": {
+        "discount_pct": null,
+        "is_free": false,
+        "is_game_pass": false,
+        "original_price_ars": 11700.0,
+        "price_ars": 11700.0,
+        "price_usd_equiv": 7.57,
+        "store_id": "BWMQL2RPWBHB",
+        "title": "Celeste",
+        "url": "https://www.xbox.com/es-ar/games/store/-/BWMQL2RPWBHB"
+      }
+    },
+    {
+      "cheapest": "xbox",
+      "diff_pct": null,
+      "match_id": 9091,
+      "match_score": 1.0,
+      "steam": {
+        "discount_pct": null,
+        "id": 10565,
+        "is_free": false,
+        "original_price_usd": 0.0,
+        "price_usd": 0.0,
+        "steam_app_id": "1931770",
+        "title": "Chants of Sennaar",
+        "url": "https://store.steampowered.com/app/1931770/Chants_of_Sennaar/?snr=1_7_7_230_150_2"
+      },
+      "xbox": {
+        "discount_pct": 50,
+        "is_free": false,
+        "is_game_pass": false,
+        "original_price_ars": 15999.0,
+        "price_ars": 7999.5,
+        "price_usd_equiv": 5.18,
+        "store_id": "9NR8V6M3QH57",
+        "title": "Chants of Sennaar",
+        "url": "https://www.xbox.com/es-ar/games/store/-/9NR8V6M3QH57"
+      }
+    }
+  ],
+  "limit": 20,
+  "offset": 0,
+  "total": 20
+}

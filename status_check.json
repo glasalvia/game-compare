@@ -1,0 +1,10 @@
+{
+  "steam_free": 480,
+  "steam_priced": 993,
+  "steam_total": 1473,
+  "crossref": 379,
+  "crossref_steam": 257,
+  "proc_fix": [
+    "    388 I<      09:20:46 kworker/R-btrfs-fixup"
+  ]
+}

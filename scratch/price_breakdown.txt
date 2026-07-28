@@ -1,0 +1,3 @@
+free|737
+paid|4645
+zero_price|367

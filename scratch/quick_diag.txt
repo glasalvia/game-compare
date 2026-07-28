@@ -1,0 +1,18 @@
+free 737
+paid 4645
+zero 367
+---
+zero_not_free: 367
+---
+avg: 8.284632938643703 max: 200.0
+---
+date_range: 2026-07-26T17:16:16.025216+00:00 2026-07-26T23:06:59.283870+00:00
+---SAMPLE---
+#DRIVE Rally 5.99 0
+(the) Gnorp Apologue 4.4 0
+.FARM RACING. 3.29 0
+.Forty-Five 10.49 0
+0N35H07 3.34 0
+100 Asian Cats 2.0 0
+100 Capitalist Cats 14.99 0
+100 Dino Cats 10.49 0

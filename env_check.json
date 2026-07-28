@@ -1,0 +1,35 @@
+{
+  "TWITCH_CLIENT_ID": "NOT SET",
+  "TWITCH_CLIENT_SECRET": "NOT SET",
+  "IGDB_CLIENT_ID": "NOT SET",
+  "IGDB_CLIENT_SECRET": "NOT SET",
+  "xbox_count": 465,
+  "steam_count": 1473,
+  "xbox_samples": [
+    {
+      "id": "C1QJM5XT9SXV",
+      "title": "Call of Duty\u00ae: Black Ops II"
+    },
+    {
+      "id": "9MVXMVT8ZKWC",
+      "title": "Minecraft"
+    },
+    {
+      "id": "9MXZBTLG26VX",
+      "title": "EA PlayEA SPORTS FC\u2122 26 Edici\u00f3n Est\u00e1ndar para Xbox One y Xbox Series X|S"
+    },
+    {
+      "id": "BVMGCSX6XPC9",
+      "title": "Call of Duty\u00ae: Black Ops"
+    },
+    {
+      "id": "9N8KMNW6942X",
+      "title": "Call of Duty\u00ae: Black Ops 7 - Lote Multigeneraci\u00f3n"
+    }
+  ],
+  "scraper_files": [
+    "xbox_scraper.py",
+    "steam_scraper.py",
+    "matching_engine.py"
+  ]
+}

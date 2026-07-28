@@ -1,0 +1,3 @@
+Parse error in 2nd command line argument: no such column: games_added
+  SELECT status, store_id, started_at, finished_at, games_added, games_updated F
+                                      error here ---^
