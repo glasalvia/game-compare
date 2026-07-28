@@ -343,29 +343,30 @@ def main():
             batch_games_with_pairs += 1
             stats["igdb_games_with_pairs"] += 1
 
-            # ── Producto cartesiano Steam × Xbox ───────────────
+            # ── Primer match Steam × Xbox (sin producto cartesiano) ──
+            matched = False
             for sid in steam_ids:
-                if SHUTDOWN:
+                if SHUTDOWN or matched:
                     break
 
+                # ── Precio Steam (una sola vez por steam_id) ───
+                sp = steam_price(sid)
+                if not sp:
+                    stats["steam_price_fail"] += 1
+                    continue
+                stats["steam_price_ok"] += 1
+
+                if sp["is_free"]:
+                    stats["steam_free"] += 1
+
                 for xid in xbox_ids:
-                    if SHUTDOWN:
+                    if SHUTDOWN or matched:
                         break
 
                     pair_id = f"{sid}↔{xid}"
                     stats["pairs_total"] += 1
 
                     try:
-                        # ── Precio Steam ───────────────────────
-                        sp = steam_price(sid)
-                        if not sp:
-                            stats["steam_price_fail"] += 1
-                            continue
-                        stats["steam_price_ok"] += 1
-
-                        if sp["is_free"]:
-                            stats["steam_free"] += 1
-
                         # ── Precio Xbox ────────────────────────
                         xp = xbox_price(xid)
                         if not xp:
@@ -383,6 +384,7 @@ def main():
                             conn, sid, name, sp, igdb_game_id, xid, xp
                         )
                         stats["matches_stored"] += 1
+                        matched = True
 
                         if args.verbose:
                             gp_tag = " [GP]" if xp.get("is_game_pass") else ""
