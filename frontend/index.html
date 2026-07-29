@@ -198,6 +198,7 @@ header {
   background: var(--bg-card);
   border: 2px solid var(--border);
   padding: 0.75rem;
+  animation: pixelReveal 0.3s steps(4);
 }
 .featured-section-title {
   font-family: 'Press Start 2P', monospace;
@@ -258,13 +259,6 @@ header {
   margin-top: 0.5rem;
   line-height: 1.4;
 }
-@media (max-width: 900px) {
-  .featured-grid { grid-template-columns: repeat(2, 1fr); }
-}
-@media (max-width: 600px) {
-  .featured-grid { grid-template-columns: 1fr; }
-}
-
 /* ══════════ TOOLBAR ══════════ */
 .toolbar {
   max-width: 1400px; margin: 1.25rem auto; padding: 0 1.5rem;
@@ -656,22 +650,89 @@ footer strong { color: var(--text); }
 .external-links .link-steam:hover { background: rgba(96,165,250,0.18); transform: translateY(-2px); }
 
 /* ══════════ RESPONSIVE ══════════ */
+/* ══════════ MOBILE (≤768px) ══════════ */
 @media (max-width: 768px) {
+  /* ── Header & Metrics ── */
   .header-inner { padding: 0.75rem 1rem; flex-direction: column; align-items: flex-start; }
   .header-title { font-size: 0.65rem; }
   .metrics-row { grid-template-columns: repeat(2, 1fr); gap: 0.4rem; padding: 0 0.75rem; }
   .metric-card { padding: 0.75rem; }
   .metric-value { font-size: 0.9rem; }
-  .toolbar { padding: 0 0.75rem; }
   main { padding: 0 0.75rem 2rem; }
-  thead th, tbody td { padding: 0.5rem 0.6rem; font-size: 0.6rem; }
-  .card-grid.visible { grid-template-columns: 1fr; }
-}
-.btn-pixel:disabled { opacity: 0.4; cursor: not-allowed; transform: none; }
 
+  /* ── Paso 1: Forzar cards, ocultar tabla + view-toggle ── */
+  .view-toggle { display: none; }
+  .table-wrap { display: none !important; }
+  .card-grid { display: grid !important; }
+  .card-grid.visible, .card-grid { grid-template-columns: 1fr; }
+  .game-card { padding: 0.75rem; }
+
+  /* ── Paso 2: Toolbar vertical ── */
+  .toolbar {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0 0.75rem;
+  }
+  .search-box { width: 100%; min-width: unset; }
+  .sort-select { width: 100%; }
+  .filter-chips { justify-content: center; }
+  .filter-chip { font-size: 0.55rem; padding: 0.3rem 0.5rem; }
+
+  /* ── Paso 4a: Modal compacto ── */
+  .modal-content {
+    max-width: 95vw;
+    padding: 1rem;
+  }
+  .detail-row {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  .external-links { flex-wrap: wrap; }
+
+  /* ── Footer apilado ── */
+  footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.25rem;
+    padding: 0.5rem 1rem;
+  }
+
+  /* ── Touch targets ≥ 44px ── */
+  .btn-pixel, .sort-select, .view-toggle, .filter-chip {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+}
+
+/* ══════════ MOBILE SMALL (≤600px) ══════════ */
+@media (max-width: 600px) {
+  /* ── Paso 3: Featured sections stacked ── */
+  .featured-grid { grid-template-columns: 1fr; }
+
+  .featured-game-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+
+  .featured-game-save { align-self: flex-end; }
+
+  .featured-game-prices {
+    font-size: 0.55rem;
+    white-space: normal;
+    line-height: 1.4;
+  }
+
+  .featured-section-card { padding: 0.5rem; }
+}
+
+/* ══════════ MOBILE XS (≤480px) ══════════ */
 @media (max-width: 480px) {
   .metrics-row { grid-template-columns: 1fr; }
 }
+
+.btn-pixel:disabled { opacity: 0.4; cursor: not-allowed; transform: none; }
 </style>
 </head>
 <body>
@@ -679,14 +740,14 @@ footer strong { color: var(--text); }
 <!-- ══════════════ HEADER ══════════════ -->
 <header>
   <div class="header-inner">
-    <div class="header-brand">
+    <a class="header-brand" onclick="resetAndReload(); return false;" style="cursor:pointer;text-decoration:none">
       <span class="header-icon">👾</span>
       <h1 class="header-title">
         <span class="xbox-accent">XBOX</span>
         <span class="sep">VS</span>
         <span class="steam-accent">STEAM</span>
       </h1>
-    </div>
+    </a>
     <div class="last-update">
       <span class="dot"></span>
       <span id="lastUpdateText">LOADING...</span>

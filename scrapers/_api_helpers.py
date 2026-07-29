@@ -154,7 +154,7 @@ def xbox_price(product_id):
                 if title:
                     break
             
-            # Plataformas jugables (AllowedPlatforms)
+            # Plataformas jugables (AllowedPlatforms, ignorando IDs internos como 8828080)
             playable_platforms = set()
             for sku_avail in product.get("DisplaySkuAvailabilities", []):
                 for avail in sku_avail.get("Availabilities", []):
@@ -164,8 +164,6 @@ def xbox_price(product_id):
                             playable_platforms.add("Xbox")
                         elif pn == "Windows.Desktop":
                             playable_platforms.add("PC")
-                        elif pn:
-                            playable_platforms.add(pn)
             playable_on = "+".join(sorted(playable_platforms)) if playable_platforms else None
 
             # Precio
