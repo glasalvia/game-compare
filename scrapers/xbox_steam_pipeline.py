@@ -152,9 +152,9 @@ def store_match_xbox(conn, steam_app_id, steam_title, steam_price_data,
                          igdb_game_id, xbox_id, xbox_data)
     conn.execute(
         """UPDATE igdb_steam_to_xbox
-           SET source = ?
+           SET source = ?, xbox_playable_on = ?
            WHERE steam_app_id = ? AND xbox_store_id = ?""",
-        (PIPELINE_SOURCE, steam_app_id, xbox_id),
+        (PIPELINE_SOURCE, xbox_data.get("playable_on"), steam_app_id, xbox_id),
     )
     return result
 

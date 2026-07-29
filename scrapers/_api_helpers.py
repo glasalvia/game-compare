@@ -154,6 +154,20 @@ def xbox_price(product_id):
                 if title:
                     break
             
+            # Plataformas jugables (AllowedPlatforms)
+            playable_platforms = set()
+            for sku_avail in product.get("DisplaySkuAvailabilities", []):
+                for avail in sku_avail.get("Availabilities", []):
+                    for ap in avail.get("Conditions", {}).get("ClientConditions", {}).get("AllowedPlatforms", []):
+                        pn = ap.get("PlatformName", "")
+                        if pn == "Windows.Xbox":
+                            playable_platforms.add("Xbox")
+                        elif pn == "Windows.Desktop":
+                            playable_platforms.add("PC")
+                        elif pn:
+                            playable_platforms.add(pn)
+            playable_on = "+".join(sorted(playable_platforms)) if playable_platforms else None
+
             # Precio
             for sku_avail in product.get("DisplaySkuAvailabilities", []):
                 for avail in sku_avail.get("Availabilities", []):
@@ -169,6 +183,7 @@ def xbox_price(product_id):
                             "currency": price_data.get("CurrencyCode", "ARS"),
                             "is_free": False,
                             "is_game_pass": False,
+                            "playable_on": playable_on,
                         }
             
             # Sin precio > 0 → Game Pass o gratis
@@ -178,6 +193,7 @@ def xbox_price(product_id):
                 "is_free": True,
                 "is_game_pass": True,
                 "currency": "ARS",
+                "playable_on": playable_on,
             }
             
         except (requests.RequestException, KeyError, ValueError):
@@ -274,8 +290,8 @@ def store_match(conn, steam_app_id, steam_title, steam_price_data,
              steam_is_free,
              xbox_title, xbox_price_ars, xbox_msrp_ars, xbox_wholesale_ars,
              xbox_currency, xbox_is_free, xbox_is_game_pass,
-             matched_at, source)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP, 'definitive_pipeline_v3')
+             matched_at, source, xbox_playable_on, platforms)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP, 'definitive_pipeline_v3', ?, ?)
     """, (
         steam_db_id, steam_app_id, igdb_game_id, xbox_id,
         steam_price_data["price_usd"],
@@ -289,6 +305,8 @@ def store_match(conn, steam_app_id, steam_title, steam_price_data,
         xbox_data.get("currency", "ARS"),
         1 if xbox_data.get("is_free") else 0,
         1 if xbox_data.get("is_game_pass") else 0,
+        xbox_data.get("playable_on"),
+        None,  # platforms se backfillean desde IGDB
     ))
     
     return True

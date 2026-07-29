@@ -87,9 +87,11 @@ CREATE TABLE IF NOT EXISTS igdb_steam_to_xbox (
     matched_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     steam_price_usd REAL,
     steam_original_usd REAL,
-    steam_discount_pct INTEGER,
-    steam_is_free BOOLEAN DEFAULT 0,
-    source TEXT,                       -- 'legacy', 'definitive_pipeline_v3'
+    steam_discount_pct INTEGER DEFAULT 0,
+    steam_is_free INTEGER DEFAULT 0,
+    source TEXT DEFAULT 'legacy',
+    platforms TEXT,
+    xbox_playable_on TEXT,
     PRIMARY KEY (steam_game_id, steam_app_id),
     FOREIGN KEY (steam_game_id) REFERENCES games(id)
 );
