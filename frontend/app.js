@@ -175,7 +175,8 @@ async function loadPage(offset) {
 
 // ─── APPEND GAMES (infinite scroll) ───
 function appendGames(games) {
-  if (currentView === 'table') {
+  const view = window.innerWidth <= 768 ? 'cards' : currentView;
+  if (view === 'table') {
     $tableWrap.classList.add('visible');
     $cardGrid.classList.remove('visible');
     renderTableRows(games);
@@ -188,7 +189,8 @@ function appendGames(games) {
 
 // ─── REPLACE GAMES ───
 function replaceGames(games) {
-  if (currentView === 'table') {
+  const view = window.innerWidth <= 768 ? 'cards' : currentView;
+  if (view === 'table') {
     $tableWrap.classList.add('visible');
     $cardGrid.classList.remove('visible');
     $tbody.innerHTML = '';
@@ -448,6 +450,7 @@ document.getElementById('filterChips').addEventListener('click', (e) => {
   document.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
   chip.classList.add('active');
   currentFilter = chip.dataset.filter;
+  window.scrollTo({ top: 0, behavior: 'smooth' });
   loadFeatured();
   resetAndReload();
 });
@@ -459,7 +462,6 @@ $search.addEventListener('input', () => {
   searchTimeout = setTimeout(() => {
     currentQuery = $search.value.trim();
     if (currentQuery) {
-      // Update URL for shareability
       const url = new URL(window.location);
       url.searchParams.set('q', currentQuery);
       window.history.pushState({}, '', url);
@@ -468,6 +470,7 @@ $search.addEventListener('input', () => {
       url.searchParams.delete('q');
       window.history.pushState({}, '', url);
     }
+    window.scrollTo({ top: 0, behavior: 'smooth' });
     resetAndReload();
   }, 300);
 });
