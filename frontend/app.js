@@ -1,6 +1,6 @@
 // Game Compare — Frontend Logic v3
 // Server-side pagination + Infinite Scroll + Dashboard A
-const API = 'http://localhost:5000';
+const API = `http://${window.location.hostname}:5000`;
 
 // ─── STATE ───
 let currentSort = 'multiplier';
