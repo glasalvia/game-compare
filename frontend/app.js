@@ -73,7 +73,6 @@ function resetAndReload() {
   $cardGrid.innerHTML = '';
   sentinel.style.display = 'none';
   loadPage(0);
-  loadFeatured();
 }
 
 // ─── LOAD STATS (legacy: last update + footer stats) ───
@@ -451,7 +450,6 @@ document.getElementById('filterChips').addEventListener('click', (e) => {
   chip.classList.add('active');
   currentFilter = chip.dataset.filter;
   window.scrollTo({ top: 0, behavior: 'smooth' });
-  loadFeatured();
   resetAndReload();
 });
 
