@@ -93,6 +93,7 @@ def _build_row_dict(r):
         "xbox": {
             "title": r["xbox_title"],
             "store_id": r["xbox_store_id"],
+            "playable_on": r["xbox_playable_on"] or "Xbox",
             "url": f"https://www.xbox.com/es-ar/games/store/-/{r['xbox_store_id']}" if r["xbox_store_id"] else None,
             "price_ars": xbox_price,
             "price_usd_equiv": xbox_usd,
@@ -374,6 +375,7 @@ def games():
                 1.0 as match_score,
                 i.xbox_store_id,
                 i.xbox_title,
+                i.xbox_playable_on,
                 i.xbox_price_ars,
                 i.xbox_msrp_ars,
                 i.xbox_wholesale_ars,

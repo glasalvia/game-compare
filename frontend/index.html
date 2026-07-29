@@ -464,6 +464,21 @@ tbody tr:last-child td { border-bottom: none; }
 .badge-discount { color: var(--gold); border-color: var(--gold-dark); background: rgba(251,191,36,0.12); }
 .badge-free { color: var(--text-dim); border-color: var(--border); }
 
+/* Platform badges (modal) */
+.platform-badge {
+  display: inline-flex; align-items: center; gap: 0.35rem;
+  padding: 0.35rem 0.8rem;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.4rem;
+  font-weight: 400;
+  border: 2px solid;
+  box-shadow: inset -1px -1px 0 rgba(0,0,0,0.4), inset 1px 1px 0 rgba(255,255,255,0.03);
+  letter-spacing: 0;
+}
+.platform-badge.xbox-only       { color: var(--green); border-color: var(--green-dark); background: rgba(74,222,128,0.1); }
+.platform-badge.play-anywhere   { color: var(--gold); border-color: var(--gold-dark); background: rgba(251,191,36,0.1); }
+.platform-badge.pc-only         { color: var(--blue); border-color: var(--blue-dark); background: rgba(96,165,250,0.1); }
+
 /* ══════════ CARD VIEW ══════════ */
 .card-grid { display: none; }
 .card-grid.visible {

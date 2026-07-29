@@ -365,6 +365,16 @@ function shareTelegramGame(id) { shareTo('telegram', id); }
 
 // ─── VIEW TOGGLE
 
+function platformBadge(playableOn) {
+  const map = {
+    'Xbox':        { icon: '🎮', label: 'Solo Xbox', cls: 'xbox-only', hint: 'Jugable solo en consola Xbox' },
+    'PC+Xbox':     { icon: '💻🎮', label: 'PC + Xbox', cls: 'play-anywhere', hint: 'Play Anywhere — una compra, dos plataformas' },
+    'PC':          { icon: '💻', label: 'Solo PC', cls: 'pc-only', hint: 'Solo Microsoft Store PC' },
+  };
+  const info = map[playableOn] || map['Xbox'];
+  return `<span class="platform-badge ${info.cls}" title="${info.hint}">${info.icon} ${info.label}</span>`;
+}
+
 function openDetail(g) {
   _shareGames[g.xbox_store_id] = g;
   const xboxDisplay = g.xbox.is_game_pass ? 'Game Pass' : g.xbox.is_free ? 'Gratis' : formatARS(g.xbox.price_ars);
@@ -389,6 +399,9 @@ function openDetail(g) {
       <span class="detail-label">Diferencia</span>
       <span class="detail-value">${g.multiplier.toFixed(1)}x más barato en ${g.cheaper_on === 'xbox' ? 'Xbox' : 'Steam'}</span>
     </div>` : ''}
+    <div style="margin-top:0.5rem;display:flex;justify-content:center">
+      ${platformBadge(g.xbox.playable_on)}
+    </div>
     <div class="external-links">
       <a class="link-xbox" href="${esc(g.xbox.url)}" target="_blank" rel="noopener">Xbox Store ↗</a>
       <a class="link-steam" href="${esc(g.steam.url)}" target="_blank" rel="noopener">Steam ↗</a>
